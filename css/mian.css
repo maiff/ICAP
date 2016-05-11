@@ -92,7 +92,7 @@ input{
 	background: url('../src/small-mask.png') no-repeat;
 	background-size: 100%;
 	bottom: 0;
-	height: 6.5rem;
+	height: 6rem;
 	width: 8.8rem;
 	left: 50%;
 	transform: translate(-50%,0);
@@ -100,7 +100,7 @@ input{
 }
 
 
-
+/*placeholder css*/
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     
     text-align: center;
