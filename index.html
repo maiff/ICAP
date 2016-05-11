@@ -16,8 +16,8 @@
       } 
 </script>
 <body>
-	<!-- <div id="main-mask" >		
-	</div> -->
+	<div id="main-mask" >		
+	</div>
 	<div id="main">
 		<header>登录</header>
 		<div id="log">
@@ -42,9 +42,14 @@
 </body>
 <script type="text/javascript" src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
 <script type="text/javascript">
-	$('#main-mask').click(function(){
-		$(this).css('display','none');
-	})
+	setTimeout(function(){
+		$('#main-mask').css({'opacity':'0',});
+	},1000);
+	setTimeout(function(){
+		$('#main-mask').css({'display':'none'});
+	},3000)
+	
+	
 
 </script>
 </html>

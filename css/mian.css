@@ -21,6 +21,7 @@ html,body{
 	position: absolute;
 	top: 0;
 	z-index: 9999;
+	transition: all 3s;
 }
 header{
 	height: 1.8rem;
