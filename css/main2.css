@@ -59,8 +59,8 @@ nav{
 	height: 1.5rem; 
 	line-height: 1.5;
 	position: relative;
-	border-top:1px solid #ddd;
-	border-bottom:  1px solid #ddd;
+	border-top:1px solid #eee;
+	border-bottom:  1px solid #eee;
 }
 .line-block img{
 	width: 0.5rem;
