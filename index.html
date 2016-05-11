@@ -30,5 +30,9 @@
 	$('#main-mask').click(function(){
 		$(this).css('display','none');
 	})
+	if(document.documentElement.scrollHeight <= document.documentElement.clientHeight) {
+	bodyTag = document.getElementsByTagName('body')[0];
+	bodyTag.style.height = document.documentElement.clientWidth / screen.width * screen.height + 'px';
+}
 </script>
 </html>
