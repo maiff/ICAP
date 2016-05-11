@@ -67,6 +67,7 @@ input{
 	text-align: center;
 	font-size: 0.6rem; 
 	box-shadow: 3px 3px 3px #ccc;
+	cursor: pointer;
 }
 
 .choose{
@@ -96,4 +97,25 @@ input{
 	left: 50%;
 	transform: translate(-50%,0);
 	z-index: -1;
+}
+
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    
+    text-align: center;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   
+   opacity:  1;
+   text-align: center;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   
+   opacity:  1;
+   text-align: center;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   
+   text-align: center;
 }
