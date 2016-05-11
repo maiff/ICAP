@@ -41,13 +41,21 @@
 	
 </body>
 <script type="text/javascript" src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
-<script type="text/javascript">
-	setTimeout(function(){
+<script type="text/javascript">	
+	var mask=new Image();
+	mask.src="src/mask.png";
+	var.mask2=new Image();
+	mask2.src="src/small-mask.png";
+	mask.onload=function(){
+		setTimeout(function(){
 		$('#main-mask').css({'opacity':'0',});
 	},1000);
-	setTimeout(function(){
+		setTimeout(function(){
 		$('#main-mask').css({'display':'none'});
-	},3000)
+	},3000);
+	}
+	 
+	
 	
 	
 
