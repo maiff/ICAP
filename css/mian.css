@@ -23,7 +23,7 @@ html,body{
 	z-index: 9999;
 }
 header{
-	height: 2rem;
+	height: 1.8rem;
 	background:#00BBD3;
 	text-align: center;
 	line-height: 2rem;
@@ -33,12 +33,12 @@ header{
 }
 .input-container{
 	margin: 0 auto;
-	width: 8.4rem;
+	width: 8.8rem;
 	margin-top: 1.5rem;
 }
 
 input{
-	width: 8.4rem;
+	width: 8.8rem;
 	margin:0 auto;
 	border: none;
 	border-radius: 10px;
@@ -63,4 +63,32 @@ input{
 	text-align: center;
 	font-size: 0.6rem; 
 	box-shadow: 3px 3px 3px #ccc;
+}
+
+.choose{
+	color: #3FC0EE;
+	font-size: 0.4rem;
+	width: 8.4rem;
+	margin:0 auto;
+	position: relative;
+}
+.choose .c-1{
+	 position: absolute;
+	 left: 0.5rem;
+	 top: 0.5rem;
+}
+.c-2{
+	position: absolute;
+	right: 0.5rem;
+	top:0.5rem;
+}
+#img-log{
+	position: absolute;
+	background: url('../src/small-mask.png') no-repeat;
+	background-size: 100%;
+	bottom: 0;
+	height: 7rem;
+	width: 8.8rem;
+	left: 50%;
+	transform: translate(-50%,0);
 }
