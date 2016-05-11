@@ -36,3 +36,56 @@ nav{
 	margin-top: -0.2rem;
 }
 
+#me-logo{
+	text-align: center;
+	margin-top: 0.8rem;
+		
+}
+#me-logo img{
+	
+	
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 10px;
+}
+#me-logo p{
+	font-size: 0.55rem;
+	font-weight: bold;
+}
+
+.line-block{
+	background: #fff;
+	border:1px 0 1px 0 #ccc;
+	height: 1.5rem; 
+	line-height: 1.5;
+	position: relative;
+	border-top:1px solid #ddd;
+	border-bottom:  1px solid #ddd;
+}
+.line-block img{
+	width: 0.5rem;
+	height: 0.5rem;
+
+}
+.left{
+	margin-left: 0.5rem;
+}
+
+.line-block span{
+	padding-left: 0.5rem;
+	font-size: 0.6rem;
+}
+.right{
+	position: absolute;
+	right: 0.5rem;
+}
+
+.first{
+	margin-top: 0.5rem;
+}
+.second{
+	margin-top: 1rem;
+}
+.last{
+	margin-top: 1rem;
+}
