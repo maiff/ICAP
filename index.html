@@ -10,7 +10,7 @@
 </head>
 <script type="text/javascript">
 		//隐藏任务栏
- addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
+ document.body.addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
       function hideURLbar(){ 
                 window.scrollTo(0,1); 
       } 
