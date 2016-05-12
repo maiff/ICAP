@@ -57,6 +57,16 @@ Q.reg('book',function(){
 		}
 	});
 
+$('.confirm').click(function(){
+	showOrNo([$('#e-mask')],
+			[$('#e-book-item-container')]
+		)
+});
+$('.cancel').click(function(){
+	showOrNo([$('#e-mask')],
+			[$('#e-book-item-container')]
+		)
+})
 
 
 
