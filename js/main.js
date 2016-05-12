@@ -1,4 +1,14 @@
 //导航变色
+	//消失出现
+var showOrNo=function(){
+	var arg1=arguments[0],arg2=arguments[1];
+	for(var i=0,len1=arg1.length;i<len1;i++){
+		arg1[i].css('display','none');
+	}
+	for(var j=0,len2=arg2.length;j<len2;j++){
+		arg2[j].css('display','block');
+	}
+}
 var _until={
 	choose:$('.nav-home')
 }
@@ -21,6 +31,9 @@ Q.reg('me',function(){
 Q.reg('look',function(){
    		
 	});
+Q.reg('book',function(){
+   		showOrNo([$('#me')],[$('#head'),$('#e-mask')])
+	});
 
 // .reg([
 //   		['about',function(){
@@ -39,3 +52,9 @@ Q.reg('look',function(){
 
 		}
 	});
+
+
+
+
+	//showOrNo([$('#head'),$('#e-book')],[$('#me')])
+
