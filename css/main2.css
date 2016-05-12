@@ -9,6 +9,11 @@ nav{
 	bottom: 0;
 	background: #fff; 
 }
+#peizhong{
+	height: 1.8rem;
+	width: 100%;
+	background: #F0EFF5;
+}
 
 #nav-ul{
 	list-style: none;
@@ -34,8 +39,11 @@ nav{
 .nav-item  p{
 	font-size:0.2rem; 
 	margin-top: -0.2rem;
+	color:#000;
 }
-
+#me{
+	/*display: none;*/
+}
 #me-logo{
 	text-align: center;
 	margin-top: 0.8rem;
@@ -57,6 +65,7 @@ nav{
 	background: #fff;
 	border:1px 0 1px 0 #ccc;
 	height: 1.5rem; 
+	
 	line-height: 1.5;
 	position: relative;
 	border-top:1px solid #eee;
@@ -74,6 +83,7 @@ nav{
 .line-block span{
 	padding-left: 0.5rem;
 	font-size: 0.6rem;
+
 }
 .right{
 	position: absolute;
@@ -88,4 +98,53 @@ nav{
 }
 .last{
 	margin-top: 1rem;
+}
+
+#head{
+	display: none;
+	width: 100%;
+	height: 1.8rem;
+	position: absolute;
+	top: 0;
+	background: #fff;
+	text-align: center;
+	line-height: 1.8rem;
+	color: #32C9DD;
+	font-size: 0.6rem;
+	font-weight: bold;
+}
+#h-logo{
+	width: 0.6rem;
+	height: 1rem;
+	
+	background: url(../src/bookBlue.png) no-repeat;
+	background-size: 100%;
+	position: absolute;
+	top: 0.5rem;
+	left: 0.5rem;
+
+}
+
+#e-mask{
+	display: none;
+	width: 8.8rem;
+    height: 10rem;
+    position: absolute;
+    top: 3rem;
+    left: 0.6rem;
+    background: #fff;
+    border: 1px solid #777;
+    box-shadow: 10px 15px 50px 5px #999;
+}
+
+#e-mask dt{
+	font-size: 0.6rem;
+    font-weight: bold;
+    color: #3F4558;
+}
+
+#e-mask dd{
+	font-size: 0.47rem;
+    color: #9B9A9B;
+    line-height: 0.73rem;
 }
