@@ -27,13 +27,13 @@ $('.nav-item').click(function(){
 
 Q.reg('me',function(){
    		// $('body p').text('111')
-   		showOrNo([$('#head'),$('#e-mask')],[$('#me')]);
+   		showOrNo([$('#head'),$('#e-mask'),$('#e-book-item-container')],[$('#me')]);
 	});
 Q.reg('look',function(){
    		
 	});
 Q.reg('book',function(){
-   		showOrNo([$('#me')],[$('#head'),$('#e-mask')]);
+   		showOrNo([$('#me'),$('#e-book-item-container')],[$('#head'),$('#e-mask')]);
    		var date=new Date();
    		var str=date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate();
    		$('#time').text(str);
