@@ -27,13 +27,23 @@ $('.nav-item').click(function(){
 
 Q.reg('me',function(){
    		// $('body p').text('111')
-   		showOrNo([$('#head'),$('#e-mask'),$('#e-book-item-container')],[$('#me')]);
-	});
-Q.reg('look',function(){
+   		showOrNo([$('#head'),$('#look-container'),$('#e-mask'),$('#e-book-item-container')],
+   			[$('#me')]);
    		
 	});
+Q.reg('look',function(){
+		showOrNo([$('#h-logo'),$('#time')],
+			[$('#head')]);
+		$('#h-title').text('发现');
+
+   		showOrNo([$('#me'),$('#e-mask'),$('#e-book-item-container')],
+   			[$('#look-container')]);
+	});
 Q.reg('book',function(){
-   		showOrNo([$('#me'),$('#e-book-item-container')],[$('#head'),$('#e-mask')]);
+		$('#h-title').text('电子病历本');
+		showOrNo([],[$('#h-logo'),$('#time')]);
+   		showOrNo([$('#me'),$('#look-container'),$('#e-book-item-container')],
+   			[$('#head'),$('#e-mask')]);
    		var date=new Date();
    		var str=date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate();
    		$('#time').text(str);

@@ -79,6 +79,9 @@ nav{
 .left{
 	margin-left: 0.5rem;
 }
+.left-icon{
+	width: 0.7rem !important;
+}
 
 .line-block span{
 	padding-left: 0.5rem;
@@ -128,6 +131,7 @@ nav{
 	position: absolute;
 	right: 0.5rem;
 	font-size: 0.1rem;
+	top:0.05rem;
 }
 
 #e-mask{
@@ -202,4 +206,14 @@ nav{
 }
 .e-book-done{
 	 background: #CCF7ED;
+}
+.l-first{
+	margin-top: 1rem;
+}
+
+.l-second{
+	margin-top: 2rem;
+}
+.l-three{
+	margin-top: 1rem;
 }
