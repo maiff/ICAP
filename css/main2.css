@@ -124,6 +124,11 @@ nav{
 	left: 0.5rem;
 
 }
+#time{
+	position: absolute;
+	right: 0.5rem;
+	font-size: 0.1rem;
+}
 
 #e-mask{
 	display: none;
