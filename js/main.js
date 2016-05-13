@@ -13,7 +13,7 @@ var showOrNo=function(){
 var disapperAll=function(){
 	var all_module=[$('#e-book'),$('#society-container')
 					,$('#look-container'),$('#me'),
-					$('#word-detail'),$('#look-detail'),$('.spare')];
+					$('#word-detail'),$('.online-test'),$('.spare'),$('.zhuanjiaquan')];
 	for(var i=0,len=all_module.length;i<len;i++){
 		all_module[i].css('display','none');
 	}
@@ -114,7 +114,25 @@ $('#word-detail').click(function(){
 //点击进入在线评测
 $('.l-three').click(function(){
 	disapperAll();
-	showOrNo([$('.t-h-detail')],
-		[$('.spare'),$('#look-detail')])
+	showOrNo([],
+		[$('.spare'),$('.online-test')])
 	$('#head').addClass('h-society');
+});
+
+//进入专家圈
+$('.l-first').click(function(){
+	disapperAll();
+	$('#h-title').text('专家圈');
+	showOrNo([$('nav')],
+		[$('.zhuanjiaquan')]);
+});
+
+//返回
+$('#zjq-return').click(function(){
+	disapperAll();
+		showOrNo([$('#h-logo'),$('#time')],
+			[$('#head')]);
+		$('#h-title').text('发现');
+		$('#head').removeClass('h-society');
+   		showOrNo([],[$('#look-container'),$('nav')]);
 })
