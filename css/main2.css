@@ -135,7 +135,7 @@ nav{
 }
 
 #e-mask{
-	display: none;
+	
 	width: 8.8rem;
     height: 10.5rem;
     position: absolute;
@@ -216,4 +216,138 @@ nav{
 }
 .l-three{
 	margin-top: 1rem;
+}
+
+.h-society{
+	background:#00BBD6 !important;
+	color: #fff !important;
+}
+.society-f{
+	border-top: 1px solid #bbb;
+    background: #00BBD6 !important;
+    color: #fff !important;
+    font-size: 0.45rem;
+    box-shadow: 1px 2px 15px #000;
+    
+}
+.society-f div{
+	display: inline-block;
+    text-align: center;
+    width: 50%;
+    height: 1.3rem;
+    line-height: 1.3rem;
+}
+
+.intro{
+	border-bottom: 3px solid #DBF486;
+}
+.society-ding{
+	margin-top: 1rem;
+	border-bottom: 1px solid #bbb;
+	border-top: 1px solid #bbb;
+}
+.society-ding div:first-child{
+	margin-top: 0;
+}
+.ding-word{
+	width: 100%;
+    height: 1rem;
+    background-color: #fff;
+    font-size: 0.4rem;
+    margin-top: 1px;
+    padding-left: 0.5rem;
+    line-height: 1rem;
+}
+.s-a{
+	background:#fff;
+	margin-top: 0.5rem;
+	position: relative;
+	
+
+}
+.s-a dt{
+	padding:0.5rem;
+	font-size: 0.5rem;
+}
+.s-a dd{
+	padding: 0 0.5rem 0.5rem 0.5rem;
+    font-size: 0.4rem;
+    line-height: 0.8rem;
+}
+.word-logo{
+	height: 0.5rem;
+	width: 0.5rem;
+}
+#word-detail{
+	display: none;
+}
+#word-detail img{
+	
+	width: 100%;
+}
+
+.spare{
+	width: 100%;
+	height: 1.8rem;
+	position: absolute;
+	top:0;
+	display: none;
+}
+.spare img{
+	height: 1.3rem;
+	width: 90%;
+	
+	box-shadow: 1px 5px 10px #666;
+
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+     -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.spare input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    width: 6.5rem;
+    height: 1rem;
+    border: none;
+    outline: none;
+    background: #F9F9F9;
+}
+#look-detail{
+	display: none;
+}
+.o-t-h{
+	width: 100%;
+	
+	background:#00BBD3;
+	overflow: hidden;
+}
+.o-t-h-item{
+	float: left;
+    width: 33%;
+    height: 100%;
+    line-height: 1.3rem;
+    font-size: 0.3rem;
+    color: #fff;
+    text-align: center;
+}
+.o-t-word{
+	    width: 95%;
+    height: 3rem;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 1px 1px 20px #bbb;
+    margin: 0.3rem;
+}
+.o-t-word img{
+	width: 100%;
+	height: 100%;
 }

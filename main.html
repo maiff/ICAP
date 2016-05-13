@@ -16,10 +16,16 @@
 </script>
 </head>
 <body>
-<div id="head">
-	<div id="h-logo"></div>
-	<span id="h-title">电子病历本</span>
-	<span id="time"></span>
+<div id="head" class="h-society">
+	
+		<div id="h-logo"></div>
+		<span id="h-title">电子病历本</span>
+		<span id="time"></span>
+	
+	<div class="spare">
+		<img src="src/sousuo.png">
+		<input type="text" placeholder="搜索文章及其他信息">
+	</div>
 </div>
 <!-- 电子病历浮层 -->
 <div id="e-book">
@@ -71,8 +77,50 @@
 	</div>
 </div>
 
+<!-- society -->
+<div id="society-container">
+	<div class="society-f">
+		<div class="intro">
+			看帖
+		</div><div>
+			热门
+		</div>
+	</div>
+	<div class="society-ding">
+		<div class="ding-word">
+			[置顶]社区管理规定
+		</div>
+		<div class="ding-word">
+			[置顶]新注册用户入门指南
+		</div>
+	</div>
+	<div class="s-a-c">
+		<div class="s-a">
+			<dt>【前方直击】世界提高自闭症意识日<img class="word-logo" src="src/火.png">
+			</dt>
+			<dd>因为星星看着彼此很近其实很远，独自在远方闪烁，就像自闭症的小宝宝们，明明彼此身体的距离很近，心却如此遥远，只是活在自己的世界。</dd>
+		</div>
+		<div class="s-a" id="click-test">
+			<dt>【分享】今天的两位主角<img class="word-logo" src="src/火.png">
+				<img class="word-logo" src="src/赞.png"></dt>
+			<dd>朱骥专家谈如何提高自闭症儿童的视觉认知能力、视觉与记忆康复疗法、认知治疗、自闭症儿童认知训练的干预策略。</dd>
+		</div>
+		<div class="s-a">
+			<dt>【经验】我是如何度过最初的日子<img  class="word-logo" src="src/火.png">
+			<img class="word-logo"  src="src/赞.png"></dt>
+			<dd></dd>
+		</div>
+		
+	</div>
+
+</div>
+<div id="word-detail">
+	<img src="src/society-detail.jpg">
+</div>
+
 <!-- 发现 -->
 <div id="look-container" style="display: none">
+<div class="look-content">
 	<div class="line-block l-first">
 		<img src="src/zhuanjiaquan.png" class="left left-icon">
 		<span>专家圈</span>
@@ -96,6 +144,34 @@
 		<img src="" class="right">
 	</div>
 </div>
+	
+</div>
+
+
+<div id="look-detail">
+		<div class="online-test">
+			<div class="o-t-h">
+				<div class="o-t-h-item intro">
+					在线评测
+				</div>
+				<div class="o-t-h-item">
+					入门指南
+				</div>
+				<div class="o-t-h-item">
+					训练方法
+				</div>
+			</div>
+			<div class="o-t-word">
+				<img src="src/o-t-word1.jpg">
+			</div>
+			<div class="o-t-word">
+				<img src="src/o-t-word2.jpg">
+			</div>
+			<div class="o-t-word">
+				<img src="src/o-t-word3.jpg">
+			</div>
+		</div>
+	</div>
 
 
 <!-- 个人资料界面 -->
@@ -150,7 +226,7 @@
 			</a>
 		</li>
 		<li>
-			<a class="nav-item">
+			<a class="nav-item" href="#!society">
 				<img src="src/society.png">
 				<p>社区</p>
 			</a>

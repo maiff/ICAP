@@ -8,7 +8,18 @@ var showOrNo=function(){
 	for(var j=0,len2=arg2.length;j<len2;j++){
 		arg2[j].css('display','block');
 	}
+};
+
+var disapperAll=function(){
+	var all_module=[$('#e-book'),$('#society-container')
+					,$('#look-container'),$('#me'),
+					$('#word-detail'),$('#look-detail'),$('.spare')];
+	for(var i=0,len=all_module.length;i<len;i++){
+		all_module[i].css('display','none');
+	}
+
 }
+
 var _until={
 	choose:$('.nav-home')
 }
@@ -26,24 +37,32 @@ $('.nav-item').click(function(){
 
 
 Q.reg('me',function(){
-   		// $('body p').text('111')
-   		showOrNo([$('#head'),$('#look-container'),$('#e-mask'),$('#e-book-item-container')],
-   			[$('#me')]);
+   		disapperAll();
+   		showOrNo([$('#head')],[$('#me')]);
    		
 	});
+Q.reg('society',function(){
+		disapperAll();
+		showOrNo([$('#h-logo'),$('#time')],
+			[$('#head')]);
+		$('#h-title').text('社区');
+		$('#head').addClass('h-society');
+   		showOrNo([],[$('#society-container')]);
+	});
 Q.reg('look',function(){
+		disapperAll();
 		showOrNo([$('#h-logo'),$('#time')],
 			[$('#head')]);
 		$('#h-title').text('发现');
-
-   		showOrNo([$('#me'),$('#e-mask'),$('#e-book-item-container')],
-   			[$('#look-container')]);
+		$('#head').removeClass('h-society');
+   		showOrNo([],[$('#look-container')]);
 	});
 Q.reg('book',function(){
+		disapperAll();
+		$('#head').removeClass('h-society');
 		$('#h-title').text('电子病历本');
 		showOrNo([],[$('#h-logo'),$('#time')]);
-   		showOrNo([$('#me'),$('#look-container'),$('#e-book-item-container')],
-   			[$('#head'),$('#e-mask')]);
+   		showOrNo([],[$('#head'),$('#e-book')]);
    		var date=new Date();
    		var str=date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate();
    		$('#time').text(str);
@@ -79,6 +98,23 @@ $('.cancel').click(function(){
 })
 
 
+//点击进入文章细节
+$('#click-test').click(function(){
+	disapperAll();
+	showOrNo([$('#head')],[$('#word-detail')]);
+});
+$('#word-detail').click(function(){
+	showOrNo([$('#word-detail')],[$('#head'),$('#society-container')])
+})
 
 	//showOrNo([$('#head'),$('#e-book')],[$('#me')])
 
+//disapperAll();
+
+//点击进入在线评测
+$('.l-three').click(function(){
+	disapperAll();
+	showOrNo([$('.t-h-detail')],
+		[$('.spare'),$('#look-detail')])
+	$('#head').addClass('h-society');
+})

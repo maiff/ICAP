@@ -41,7 +41,7 @@ header{
 	margin-top: 1.5rem;
 }
 
-input{
+.input-container input{
 	width: 8.8rem;
 	margin:0 auto;
 	border: none;
@@ -96,26 +96,25 @@ input{
 	width: 8.8rem;
 	left: 50%;
 	transform: translate(-50%,0);
+	-moz-transform: translate(-50%,0);
+	-webkit-transform: translate(-50%,0);
+	-ms-transform: translate(-50%,0);
 	z-index: -1;
 }
 
 
 /*placeholder css*/
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+.input-container input::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     
     text-align: center;
 }
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+.input-container input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    
    opacity:  1;
    text-align: center;
 }
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   
-   opacity:  1;
-   text-align: center;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+
+.input-container input::-ms-input-placeholder { /* Internet Explorer 10-11 */
    
    text-align: center;
 }
