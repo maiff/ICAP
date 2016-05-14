@@ -66,7 +66,7 @@ nav{
 	border:1px 0 1px 0 #ccc;
 	height: 1.5rem; 
 	
-	line-height: 1.5;
+	line-height: 1.5rem;
 	position: relative;
 	border-top:1px solid #eee;
 	border-bottom:  1px solid #eee;
@@ -85,8 +85,8 @@ nav{
 
 .line-block span{
 	padding-left: 0.5rem;
-	font-size: 0.6rem;
-
+	
+	font-size: 0.55rem;
 }
 .right{
 	position: absolute;
@@ -366,13 +366,13 @@ nav{
 	height: 0.8rem;
 }
 
-#zjq-return{
+.zjq-return{
 	position: absolute;
-	top: 0.5rem;
+	top: 0.47rem;
 	left: 0.5rem;
 
 }
-#zjq-return img{
+.zjq-return img{
     width: 1.3rem;
     height: 0.6rem;
 }
@@ -431,5 +431,83 @@ nav{
     
 }
 .zhuanjiaquan{
+	display: none;
+}
+.zjzl-title{
+	position: relative;
+	background: #fff;
+	height: 3rem;
+	margin-top: 0.5rem;
+}
+.zjzl-title img{
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	top: 0.5rem;
+	left: 0.5rem;
+}
+.zjzl-title dt{
+	position: absolute;
+    font-size: 0.65rem;
+    top: 0.5rem;
+    left: 3rem;
+}
+.zjzl-title dd{
+	position: absolute;
+    font-size: 0.4rem;
+	font-weight: 100;
+	color: #777;
+    top: 1.5rem;
+    left: 3rem;
+}
+.zjzl-title dd span{
+	font-size: 0.45rem;
+	font-weight: 600;
+	color:#000 ;
+}
+.zjzl-first,.zjzl-container{
+	margin-top: 0.5rem;
+	border-top: 1px  solid #ccc;
+	border-bottom: 1px solid #ccc;
+
+}
+.zjzl-thrid{
+	height: 3rem;
+	line-height: 3rem;
+	
+}
+
+.zjzl-thrid img{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-top: 0.75rem;
+	    float: right;
+    margin-right: 0.8rem;
+}
+
+.zjzl-button{
+	position: absolute;
+	width: 100%;
+	bottom:1rem; 
+
+}
+.zjzl-yy,.zjzl-time{
+	width: 90%;
+	margin:0 auto;
+	border-radius: 8px;
+	background: #72D5FF;
+	color: #fff;
+	text-align: center;
+	font-size: 0.6rem;
+	height: 1.3rem;
+	line-height: 1.3rem;
+}
+.zjzl-time{
+	margin-top: 0.5rem;
+	background: #fff;
+	color: #000;
+	box-shadow: 1px 1px 10px #ccc;
+}
+#zhuanjiaziliao{
 	display: none;
 }

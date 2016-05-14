@@ -128,11 +128,27 @@ $('.l-first').click(function(){
 });
 
 //返回
-$('#zjq-return').click(function(){
-	disapperAll();
+$('#return1').click(function(){
+		disapperAll();
 		showOrNo([$('#h-logo'),$('#time')],
 			[$('#head')]);
 		$('#h-title').text('发现');
 		$('#head').removeClass('h-society');
    		showOrNo([],[$('#look-container'),$('nav')]);
+})
+
+
+//点击专家头像
+$('.zj-logo').click(function(){
+	disapperAll();
+	showOrNo([$('#zjq-logo'),$('.zhuanjiaquan')],
+			[$('#zhuanjiaziliao')]);
+	$('#h-title').text('专家资料');
+});
+
+//返回
+$('#return2').click(function(){
+	$('#h-title').text('专家圈');
+	showOrNo([$('#zhuanjiaziliao')],
+		[$('.zhuanjiaquan')]);
 })
