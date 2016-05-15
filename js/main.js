@@ -13,7 +13,7 @@ var showOrNo=function(){
 var disapperAll=function(){
 	var all_module=[$('#e-book'),$('#society-container')
 					,$('#look-container'),$('#me'),
-					$('#word-detail'),$('.online-test'),$('.spare'),$('.zhuanjiaquan')];
+					$('#word-detail'),$('.online-test'),$('.spare'),$('.zhuanjiaquan'),$('#effect-task')];
 	for(var i=0,len=all_module.length;i<len;i++){
 		all_module[i].css('display','none');
 	}
@@ -81,7 +81,9 @@ Q.reg('book',function(){
     	pop:navchange=function(L){/* 每次有url变更时都会触发pop回调 */
     	/* L 为当前回调函数名称（目前仅支持关键字回调情况） */
     	//alert(L)
-    	//$('a[href=#!'+L+'] img').attr('src=')
+    	var str='"#!'+L+'"';
+    	
+    	$('a[href='+str+']').click();
  
 
 		}
@@ -154,15 +156,19 @@ $('#return2').click(function(){
 		[$('.zhuanjiaquan')]);
 })
 //disapperAll();
+//滑动动画
 $('.cudayundong').click(function(){
 	$("#task-container").css('display','block');
-	$("#task-container").animate({top:'0'},'slow');
+	$("#task-container").animate({top:'0'},'slow',function(){
+		showOrNo([$('nav'),$('#peizhong')],[]);
+	});
 
 })
 
 var xiaoshi=function(){
 	$("#task-container").animate({top:'100%'},'slow',function(){
-		$(this).css('display','none')
+		$(this).css('display','none');
+		showOrNo([],[$('nav'),$('#peizhong')]);
 	});	
 }
 $(".task-jiantou").click(xiaoshi);
@@ -212,4 +218,16 @@ touches(test_t,'swipedown',xiaoshi);
                 }  
                 if(direction.indexOf("touchend")!=-1)fun();  
             }, false);  
-        }  
+}; 
+//单选框点击
+$('.choose-container img').click(function(){
+		$(this).parent().children('img').attr('src','src/c-0.png');
+		$(this).attr('src','src/c-1.png')
+});
+
+
+$('.task-last-img').click(function(){
+	xiaoshi();
+	showOrNo([$('#h-logo'),$('#time'),$('#e-book')],[$('#effect-task')]);
+	$('#head').text('训练效果评估');
+});

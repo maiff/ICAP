@@ -554,3 +554,49 @@ nav{
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
 }
+#effect-task p{
+	float: left;
+	margin-left: 10%;
+	font-size: 0.5rem;
+
+}
+#effect-task p:nth-child(2){
+	float: left;
+	margin-left: 40%;
+	font-size: 0.5rem;
+
+}
+
+.eff-item{
+	clear: both;
+	font-size: 0.4rem;
+	padding: 0.3rem;
+	position: relative;
+	line-height: 0.8rem;
+	padding-bottom: 0;
+	
+}
+.task-biaoqian{
+	padding-top: 0;
+}
+
+.choose-container{
+	display: inline-block;
+    right: 0.3rem;
+	position: absolute;
+
+}
+.c-first{
+	padding-top: 0.7rem;
+}
+.choose-container img{
+
+    margin-right: 0.5rem;
+}
+.choose-container span{
+	font-size: 0.3rem;
+    margin-right: 0.4rem;
+}
+#effect-task{
+	display: none;
+}
