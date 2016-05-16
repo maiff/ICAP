@@ -126,7 +126,7 @@ $('.l-three').click(function(){
 $('.l-first').click(function(){
 	disapperAll();
 	$('#h-title').text('专家圈');
-	showOrNo([$('nav')],
+	showOrNo([$('nav'),$('#peizhong')],
 		[$('.zhuanjiaquan')]);
 });
 
@@ -137,7 +137,7 @@ $('#return1').click(function(){
 			[$('#head')]);
 		$('#h-title').text('发现');
 		$('#head').removeClass('h-society');
-   		showOrNo([],[$('#look-container'),$('nav')]);
+   		showOrNo([],[$('#look-container'),$('nav'),$('#peizhong')]);
 })
 
 
