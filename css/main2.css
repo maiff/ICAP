@@ -614,18 +614,15 @@ nav{
 	display: none;
 }
 
-.yindao{
-	width: 100%;
-	height: 100%;
+.line-block .yindaojiantou{
+	width: 2rem;
+	height: 2rem;
 	position: absolute;
-	top:0;
-	opacity: 0.3;
-	background: #000;
-	z-index: 10000;
+	margin-top: -0.2rem;
 }
-.yindao p{
-	color: #FF6666;
-}
-.m-show{
-	background:rgba(0,0,0,0);
+.me-wenzi{
+	    position: absolute;
+    height: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.3rem;
 }
