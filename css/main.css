@@ -101,6 +101,18 @@ header{
 	-ms-transform: translate(-50%,0);
 	z-index: -1;
 }
+.dengluyindao{
+	position: absolute;
+	margin-left: 1rem;
+    margin-top: 0.5rem;
+}
+.word1{
+
+    width: 8rem;
+    margin-top: 1rem;
+
+}
+
 
 
 /*placeholder css*/
