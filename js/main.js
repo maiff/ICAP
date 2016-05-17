@@ -89,7 +89,7 @@ Q.reg('book',function(){
 		}
 	});
 
-$('.confirm').click(function(){
+$('.jiazhang').click(function(){
 	showOrNo([$('#e-mask')],
 			[$('#e-book-item-container')]
 		)
@@ -157,68 +157,7 @@ $('#return2').click(function(){
 })
 //disapperAll();
 //滑动动画
-$('.cudayundong').click(function(){
-	$("#task-container").css('display','block');
-	$("#task-container").animate({top:'0'},'slow',function(){
-		showOrNo([$('nav'),$('#peizhong')],[]);
-	});
 
-})
-
-var xiaoshi=function(){
-	$("#task-container").animate({top:'100%'},'slow',function(){
-		$(this).css('display','none');
-		showOrNo([],[$('nav'),$('#peizhong')]);
-	});	
-}
-$(".task-jiantou").click(xiaoshi);
-var test_t=document.getElementById('task-container');
-touches(test_t,'swipedown',xiaoshi);
- function touches(obj,direction,fun){  
-            //obj:ID对象  
-            //direction:swipeleft,swiperight,swipetop,swipedown,singleTap,touchstart,touchmove,touchend  
-            //          划左，    划右，     划上，   划下，    点击，    开始触摸， 触摸移动， 触摸结束  
-            //fun:回调函数  
-            var defaults = {x: 5,y: 5,ox:0,oy:0,nx:0,ny:0};  
-            direction=direction.toLowerCase();  
-            //配置：划的范围在5X5像素内当点击处理  
-            obj.addEventListener("touchstart",function() {  
-                defaults.ox = event.targetTouches[0].pageX;  
-                defaults.oy = event.targetTouches[0].pageY;  
-                defaults.nx = defaults.ox;  
-                defaults.ny = defaults.oy;  
-                if(direction.indexOf("touchstart")!=-1)fun();  
-            }, false);  
-            obj.addEventListener("touchmove",function() {  
-                event.preventDefault();  
-                defaults.nx = event.targetTouches[0].pageX;  
-                defaults.ny = event.targetTouches[0].pageY;  
-                if(direction.indexOf("touchmove")!=-1)fun();  
-            }, false);  
-            obj.addEventListener("touchend",function() {  
-                var changeY = defaults.oy - defaults.ny;  
-                var changeX = defaults.ox - defaults.nx;  
-                if(Math.abs(changeX)>Math.abs(changeY)&&Math.abs(changeY)>defaults.y){  
-                    //左右事件  
-                    if(changeX > 0) {  
-                        if(direction.indexOf("swipeleft")!=-1)fun();  
-                    }else{  
-                        if(direction.indexOf("swiperight")!=-1)fun();  
-                    }  
-                }else if(Math.abs(changeY)>Math.abs(changeX)&&Math.abs(changeX)>defaults.x){  
-                    //上下事件  
-                    if(changeY > 0) {  
-                        if(direction.indexOf("swipetop")!=-1)fun();  
-                    }else{  
-                        if(direction.indexOf("swipedown")!=-1)fun();  
-                    }  
-                }else{  
-                    //点击事件  
-                    if(direction.indexOf("singleTap")!=-1)fun();  
-                }  
-                if(direction.indexOf("touchend")!=-1)fun();  
-            }, false);  
-}; 
 //单选框点击
 $('.choose-container img').click(function(){
 		$(this).parent().children('img').attr('src','src/c-0.png');
@@ -231,3 +170,29 @@ $('.task-last-img').click(function(){
 	showOrNo([$('#h-logo'),$('#time'),$('#e-book')],[$('#effect-task')]);
 	$('#head').text('训练效果评估');
 });
+
+//粗大运动点击
+$('.cudayundong').click(function(){
+	
+	showOrNo([$('#e-book-item-container'),$('#h-logo')],
+		[$('#e-mask2')]
+		);
+	$('#h-title').text('粗大运动评估表')
+	$('#save').css('display','inline-block')
+
+})
+
+$('.task-next').click(function(){
+	showOrNo([$('#e-mask2'),$('#save')],
+		[$('#e-book-item-container'),$('#h-logo'),$('.tijiao')]);
+	$('#h-title').text('电子病历本');
+	$('.e-undone').text('完成');
+	$('.e-undone').each(function(){
+		$(this).removeClass('e-undone');
+		$(this).addClass('e-done');
+		$(this).parent().addClass('e-book-done');
+	})
+})
+
+
+
