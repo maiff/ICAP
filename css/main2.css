@@ -412,7 +412,7 @@ nav{
 	margin:1rem 0.5rem 0 0.5rem;
 	position: relative;
 	padding-bottom: 1rem;
-	overflow: hidden;
+	float: left;
 	border-bottom: 1px solid #ccc;
 }
 
@@ -625,4 +625,21 @@ nav{
     height: 0.5rem;
     margin-left: 0.5rem;
     margin-top: 0.3rem;
+}
+img.jiantou3{
+	 width: 2rem;
+    height: 3rem;
+    position: absolute;
+}
+img.wenzi4{
+	    width: 6rem;
+    height: 3rem;
+    position: absolute;
+    margin-top: 3.5rem;
+    z-index: 999;
+}
+.jiantou4{
+	    position: absolute;
+    margin-top: -3.5rem;
+    margin-left: -0.8rem;
 }
