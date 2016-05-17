@@ -710,3 +710,22 @@ img.wenzi4{
 .jiantou5{
 	position: absolute;
 }
+#e-mask img.jiantou6{
+	    position: absolute;
+    width: 4rem;
+    height: 3rem;
+    margin-left: -1rem;
+}
+.jiantou7{
+   position: absolute;
+    width: 4rem;
+    height: 3rem;
+    z-index: 999;
+    margin-top: -4rem;
+    margin-left: 4rem;
+}
+.jiantou8{
+	position: absolute;
+	margin-left: -5rem;
+    margin-top: 2.2rem;
+}
