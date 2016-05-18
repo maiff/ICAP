@@ -13,7 +13,7 @@ var showOrNo=function(){
 var disapperAll=function(){
 	var all_module=[$('#e-book'),$('#society-container')
 					,$('#look-container'),$('#me'),
-					$('#word-detail'),$('.online-test'),$('.spare'),$('.zhuanjiaquan'),$('#effect-task')];
+					$('#yuyue'),$('#word-detail'),$('.online-test'),$('.spare'),$('.zhuanjiaquan'),$('#effect-task')];
 	for(var i=0,len=all_module.length;i<len;i++){
 		all_module[i].css('display','none');
 	}
@@ -182,7 +182,7 @@ $('.cudayundong').click(function(){
 
 })
 
-$('.task-next').click(function(){
+$('#zishitijiao').click(function(){
 	showOrNo([$('#e-mask2'),$('#save')],
 		[$('#e-book-item-container'),$('#h-logo'),$('.tijiao')]);
 	$('#h-title').text('电子病历本');
@@ -192,6 +192,16 @@ $('.task-next').click(function(){
 		$(this).addClass('e-done');
 		$(this).parent().addClass('e-book-done');
 	})
+})
+
+//快速预约
+$('.zjzl-yy').click(function(){
+	$('#return2').click();
+	$('#return1').click();
+	disapperAll();
+	$('#head').addClass('h-society');
+	$('#yuyue').css('display','block');
+	$('#h-title').text('确认预约');
 })
 
 

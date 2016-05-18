@@ -12,10 +12,16 @@
  	addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
       function hideURLbar(){ 
                 window.scrollTo(0,1); 
-      } 
+      }
+      window.onload=function(){
+      	document.getElementById('begin').style.display='none';
+      	
+      }
+
 </script>
 </head>
 <body>
+<img src="src/begin.png" id="begin">
 <div id="head">
 	
 		<div id="h-logo"></div>
@@ -48,8 +54,10 @@
 		<img src="src/zhanzi.jpg" class="zhanzi">
 				<img src="src/jiantou6.png" class="jiantou8">
 		
-		<img src="src/task-next.jpg" class="task-next">
-		<div class="peizhong">
+		<div class="e-book-item tijiao" id="zishitijiao"style="display:block;" >
+			提交
+		</div>
+		<div class="peizhong" style="height: 2rem;">
 			
 		</div>
 	</div>
@@ -219,7 +227,7 @@
 		<img src="src/yindaojiantou.png" class="right">
 		<img src="src/wodeyindaojiantou1.png " class="yindaojiantou">
 	</div>
-	
+	<img src="src/jiantou6.png" class="dianzibinglijiantou">
 </div>
 <!-- 发现细节 -->
 <div id="look-detail">
@@ -272,7 +280,7 @@
 					<img src="src/wenzi5.png" class="wenzi5">
 					<img class="zj-logo" src="src/zhuanjia-logo.png">
 				
-				<span class="zjName">朱骥 专家医师</span>
+				<span class="zjName">杨兴 专家医师</span>
 				<p class="zjWord">自闭症是一种先天脑部功能受损伤而引起的发展障碍，通常在三岁以前就可以被发现。自闭症患者从小开始便表现出语言理解及表达困难、难以与身旁的人建立感情、对各种感官刺激的异常反应及一成不变固定的玩法与行为等与一般儿童不同的特征。</p>
 			</div>
 			<div class="z-j-q-content">
@@ -288,9 +296,31 @@
 					<img class="zj-logo" src="src/zhuanjia-logo.png">
 				
 				<span class="zjName">ICAP 官方</span>
-				<a href="https://mp.weixin.qq.com/s?__biz=MzIyNzE1MDYyMQ==&mid=401928104&idx=1&sn=8ab59e015824adf038f7f78c28fcb427">
+				<a href="http://www.icapstar.com/2016/04/05/zbzrm-03-2/">
 				<img class="zjWord-z" src="src/zhuanfa2.jpg" >
 				</a>
+			</div>
+			<div class="z-j-q-content">
+				
+					<img class="zj-logo" src="src/touxiang2.png">
+				
+				<span class="zjName">刘嘉璐</span>
+				<img class="zjWord-z" src="src/zhuanjiaquanneirong3.png">
+			</div>
+			
+			<div class="z-j-q-content">
+				
+					<img class="zj-logo" src="src/touxiang2.png">
+				
+				<span class="zjName">刘嘉璐</span>
+				<img class="zjWord-z" src="src/专家圈添加.png">
+			</div>
+			<div class="z-j-q-content">
+				
+					<img class="zj-logo" src="src/touxiang2.png">
+				
+				<span class="zjName">刘嘉璐</span>
+				<img class="zjWord-z" src="src/zhuanjiaquanneirong1.png">
 			</div>
 
 		</div>
@@ -299,7 +329,7 @@
 
 <!-- 社区细节 -->
 <div id="word-detail">
-	<img src="src/society-detail.jpg">
+	<img src="src/erji.png">
 </div>
 <!-- 专家资料 -->
 <div id="zhuanjiaziliao">
@@ -309,7 +339,7 @@
 	<div class="zjzl-title">
 		<img src="src/专家资料的头像.png">
 
-		<dt>诸计</dt>
+		<dt>杨兴</dt>
 		<dd><span>所在机构 </span>如辉特殊教育康复训练机构</dd>
 	</div>
 
@@ -342,6 +372,16 @@
 		</div>
 	</div>
 </div>
+
+<div id="yuyue">
+	<dt>预约消息</dt>
+	<dd>你已经成功预约！</dd>
+	<span>详细信息</span>
+	<span class="confirm">取消</span>
+<img src="src/jiantou6.png" class="society-click">
+</div>
+
+
 
 <!-- 训练项目 -->
 <div id="task-container">
