@@ -751,7 +751,6 @@ img.wenzi4{
 	position: absolute;
 	margin-left: -5rem;
     margin-top: 2.2rem;
-    z-index: 9999;
 }
 .pppp{
 
@@ -763,7 +762,7 @@ img.wenzi4{
 .dianzibinglijiantou{
 	width: 1.5rem;
     height: 1.5rem;
-    position: absolute;
+    position: fixed;
     bottom: 0.5rem;
     z-index: 9999;
     left: 1.2rem;
