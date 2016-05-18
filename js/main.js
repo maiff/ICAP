@@ -192,6 +192,7 @@ $('#zishitijiao').click(function(){
 		$(this).addClass('e-done');
 		$(this).parent().addClass('e-book-done');
 	})
+	$('.jiantou7').css('bottom','-10rem');
 })
 
 //快速预约
